@@ -102,7 +102,11 @@ export default function Scene() {
 <spotLight position={[0, 5, 10]} angle={0.15} penumbra={1} intensity={2} /> {/* Прямий промінь */}
         
         {/* Об'єкт, на який можна клікати */}
-        <group onClick={handleBotClick} cursor="pointer">
+        <group 
+  onClick={handleBotClick} 
+  onPointerOver={() => (document.body.style.cursor = 'pointer')}
+  onPointerOut={() => (document.body.style.cursor = 'auto')}
+>
           <Bot isHappy={isHappy} />
         </group>
         
