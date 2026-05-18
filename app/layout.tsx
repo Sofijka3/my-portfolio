@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Navbar'; // Імпорт нашого меню
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google'; // 1. ДОДАНО ІМПОРТ
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Navbar /> 
         {children}
         <Analytics />
+        <GoogleAnalytics gaId="G-8GNJ4C7KDC" /> {/* 2. ДОДАНО КОМПОНЕНТ GA4 */}
       </body>
     </html>
   );
