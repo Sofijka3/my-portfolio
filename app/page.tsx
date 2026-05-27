@@ -65,14 +65,15 @@ export default function Home() {
       </p>
       
       <div className="mt-10 w-full max-w-xl p-2 border border-blue-900/50 rounded-2xl bg-gray-950 shadow-2xl shadow-blue-950/30">
-        <Scene />
-        <div className="p-4 bg-gray-900 rounded-b-xl border-t border-gray-800 text-center">
-            <p className="text-blue-400 font-bold tracking-widest uppercase text-[10px]">
-              DevBot v0.1 // Hardware & Software Interaction
-            </p>
-        </div>
+        <span className="sr-only">Robot 3D reprezentujący automatykę i interakcję hardwaru z softworem</span>
+      <Scene />
+      <div className="p-4 bg-gray-900 rounded-b-xl border-t border-gray-800 text-center">
+        <p className="text-blue-400 font-bold tracking-widest uppercase text-[10px]">
+        DevBot v0.1 // Hardware & Software Interaction
+      </p>
       </div>
-
+      </div>
+      
       <div className="mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 w-full justify-center items-center max-w-md sm:max-w-none">
         <Link 
           href="/portfolio" 
